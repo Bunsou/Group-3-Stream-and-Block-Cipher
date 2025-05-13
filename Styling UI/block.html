@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block and Stream Cipher Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Implementing Cryptography Algorithm</h1>
+        </header>
+        <section class="cipher-selection">
+            <h2 class="label">Select Cipher</h2>
+            <div class="ciphers">
+                <div class="selected">Block Cipher</div>
+                <div class="unselected"><a href="stream.html" class="link-style">Stream Cipher</a></div>
+            </div>
+        </section>
+        <section class="text-input">
+            <h2 class="label">Enter Plain Text/Ciphertext</h2>
+            <div class="label">
+                <form>
+                    <label>
+                        <input type="radio" id="plain-text-format" name="text-format" value="plain" checked> Plain Text
+                    </label>
+                    <label>
+                        <input type="radio" id="hex-format" name="text-format" value="hex"> Hex
+                    </label>
+                </form>
+            </div>
+            <div class="text-areas">
+                <div class="input-area">
+                    <textarea class="placeholder" name="input-text" id="input-text" placeholder="Type or paste your text here"></textarea>
+                </div>
+                <div class="output-area">
+                    <output class = "placeholder" name="output-text" id="output-text">Output Value will appear here</output>
+                </div>
+
+            </div>
+        </section>
+        <section class="key-input">
+            <h2 class="label">Enter Key</h2>
+            <input type="text" class="key-area placeholder" name="secret-key" id="secret-key" placeholder="Enter your secret key">
+        </section>
+        <section class="key-input"> 
+            <h2 class="label">Select your output type</h2>
+            <div class="label">
+                <form>
+                    <label>
+                        <input type="radio" id="plain-text-output" name="text-format" value="plain" checked> Plain Text
+                    </label>
+                    <label>
+                        <input type="radio" id="hex-output" name="text-format" value="hex"> Hex
+                    </label>
+                </form>
+            </div>
+        </section>
+
+        <section class="actions">
+            <button class="button encrypt-button" onmouseover="this.style.cssText='color: #FCFDFC; background-color: #005500; font-size: 16px; font-family: Roboto; font-weight: 500; line-height: 22px; word-wrap: break-word'" onmouseout="this.style.cssText=''">Encrypt</button>
+            <button class="button decrypt-button" onmouseover="this.style.cssText='color: #FCFDFC; background-color: #005500; font-size: 16px; font-family: Roboto; font-weight: 500; line-height: 22px; word-wrap: break-word'" onmouseout="this.style.cssText=''">Decrypt</button>
+        </section>
+        <section class="description">
+            <h2 class="section-title">Tool Description</h2>
+            <p class="section-content">This tool allows you to encrypt or decrypt any text or number input using block cipher algorithm, ensuring your privacy and security.</p>
+        </section>
+        <section class="how-to-use">
+            <h2 class="section-title">How do I use this tool?</h2>
+                <ol class="section-content">
+                    <li>Select Cipher.</li>
+                    <li>Enter the Plain Text or Ciphertext you would like to encrypt or decrypt.</li>
+                    <li>Select the format of the text (Plain Text or Hex).</li>
+                    <li>Enter the secret key to be used during the process.</li>
+                    <li>Select the output format (Plain Text or Hex).</li>
+                    <li>Click the "Encrypt" button if you enter the plain text or click the "Decrypt" button if you enter the cipher text.</li>
+                    <li>View the output result in the large text area on the right-hand side of the screen.</li>
+                </ol>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,266 @@
+/* block_cipher.css */
+body {
+    background: #F9FFF9;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 30px;
+    padding-bottom: 12px;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    width: 1040px; /* Adjusted width */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-left: 20px; /* Adjusted padding */
+    padding-right: 20px; /* Adjusted padding */
+}
+
+.header {
+    padding-top: 16px;
+    padding-left: 12px;
+    padding-right: 12px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+}
+
+.header h1 {
+    color: #191C17;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0;
+}
+
+.cipher-selection {
+    padding-left: 12px;
+    padding-right: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    align-self: stretch;
+}
+
+.cipher-selection .label {
+    color: #191C17;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    align-self: stretch;
+    margin: 0;
+}
+
+.cipher-selection .ciphers {
+    display: flex;
+    gap: 8px;
+    align-self: stretch;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.cipher-selection .ciphers div {
+    flex: 1 1 0;
+    padding: 8px;
+    overflow: hidden;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+
+.cipher-selection .ciphers .selected {
+    background: #008000;
+    color: #FCFDFC;
+}
+
+.cipher-selection .ciphers .unselected {
+    background: #C0C7BD;
+    color: #191C17;
+}
+
+.text-input {
+    padding-left: 12px;
+    padding-right: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    align-self: stretch;
+}
+
+.text-input .label {
+    color: #191C17;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    align-self: stretch;
+    margin: 0;
+}
+
+.text-input .text-areas {
+    display: flex;
+    gap: 8px;
+    align-self: stretch;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.text-input .text-areas div{
+    flex: 1 1 0;
+    height: 300px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    outline: 2px #A5AFA1 solid;
+    outline-offset: -2px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.text-input .text-areas .output-area {
+    background: #E8EBE7;
+}
+
+.text-input .text-areas .placeholder {
+    flex: 1 1 0;
+    height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #84917E;
+    word-wrap: break-word;
+}
+
+.text-input .text-areas .output-area .placeholder {
+    color: #616B5B;
+}
+
+.key-input {
+    padding-left: 12px;
+    padding-right: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+}
+
+.key-input .label {
+    color: #191C17;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    align-self: stretch;
+    margin: 0;
+}
+
+.key-input .key-area {
+    align-self: stretch;
+    padding: 8px 12px;
+    border-radius: 6px;
+    outline: 1px #A5AFA1 solid;
+    outline-offset: -1px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4px;
+}
+
+.key-input .key-area .placeholder {
+    flex: 1 1 0;
+    height: 20px;
+    color: #84917E;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+
+.actions {
+    padding-left: 12px;
+    padding-right: 12px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.actions button {
+    flex: 1 1 0;
+    padding: 10px 12px;
+    background: #C9FFC9;
+    border-radius: 8px;
+    outline: 1px #003C00 solid;
+    outline-offset: -1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #191C17;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    word-wrap: break-word;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+}
+
+.description, .how-to-use {
+    padding-left: 12px;
+    padding-right: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.description .section-title, .how-to-use .section-title {
+    height: 40px;
+    padding-top: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    color: #191C17;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    word-wrap: break-word;
+    align-self: stretch;
+    margin: 0;
+}
+
+.description .section-content, .how-to-use .section-content {
+    color: #191C17;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word;
+    align-self: stretch;
+    margin: 0;
+}
+
+.link-style {
+    color: inherit;
+    text-decoration: none;
+}
