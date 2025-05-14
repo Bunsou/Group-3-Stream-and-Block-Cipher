@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Block and Stream Cipher Tool</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Implementing Cryptography Algorithm</h1>
+      </header>
+      <section class="cipher-selection">
+        <h2 class="label">Select Cipher</h2>
+        <div class="ciphers">
+          <div class="cipher-option selected" id="block-cipher">
+            Block Cipher
+          </div>
+          <div class="cipher-option unselected" id="stream-cipher">
+            Stream Cipher
+          </div>
+        </div>
+      </section>
+      <section class="text-input">
+        <h2 class="label">Select your input type:</h2>
+        <div class="label">
+          <form id="input-format-form">
+            <label id="plain-text-input-label">
+              <input
+                type="radio"
+                id="plain-text-format"
+                name="input-format"
+                value="plain"
+                checked
+              />
+              Plain Text
+            </label>
+            <label id="hex-input-label">
+              <input
+                type="radio"
+                id="hex-format"
+                name="input-format"
+                value="hex"
+              />
+              Hex
+            </label>
+            <label id="base64-input-label">
+              <input
+                type="radio"
+                id="base64-format"
+                name="input-format"
+                value="base64"
+              />
+              Base64
+            </label>
+          </form>
+        </div>
+        <div class="text-areas">
+          <div class="input-area">
+            <textarea
+              type="text"
+              class="placeholder"
+              name="input-text"
+              id="input-text"
+              placeholder="Type or paste your text here"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <div class="output-area">
+            <output class="placeholder" name="output-text" id="output-text"
+              >Output Value will appear here</output
+            >
+          </div>
+        </div>
+        <div class="key-container">
+          <input
+            type="text"
+            class="key-area"
+            name="secret-key"
+            id="secret-key"
+            placeholder="Enter your secret key"
+            required
+          />
+        </div>
+      </section>
+      <section class="key-input">
+        <h2 class="label">Select your output type</h2>
+        <div class="label">
+          <form id="output-format-form">
+            <label id="plain-text-output-label">
+              <input
+                type="radio"
+                id="plain-text-output"
+                name="output-format"
+                value="plain"
+              />
+              Plain Text
+            </label>
+            <label id="hex-output-label">
+              <input
+                type="radio"
+                id="hex-output"
+                name="output-format"
+                value="hex"
+                checked
+              />
+              Hex
+            </label>
+            <label id="base64-output-label">
+              <input
+                type="radio"
+                id="base64-output"
+                name="output-format"
+                value="base64"
+              />
+              Base64
+            </label>
+          </form>
+        </div>
+      </section>
+
+      <section class="actions">
+        <button class="button encrypt-button selected" id="encrypt-button">
+          Encrypt
+        </button>
+        <button class="button decrypt-button" id="decrypt-button">
+          Decrypt
+        </button>
+      </section>
+      <section class="control-buttons">
+        <div class="button-container">
+          <button class="button submit-button" id="submit-button">
+            Submit
+          </button>
+        </div>
+      </section>
+      <section class="description">
+        <h2 class="section-title">Tool Description</h2>
+        <p class="section-content">
+          This tool allows you to encrypt or decrypt any text or number input
+          using block cipher algorithm, ensuring your privacy and security.
+        </p>
+      </section>
+      <section class="how-to-use">
+        <h2 class="section-title">How do I use this tool?</h2>
+        <ol class="section-content">
+          <li>Select Cipher.</li>
+          <li>
+            Enter the Plain Text or Ciphertext you would like to encrypt or
+            decrypt.
+          </li>
+          <li>Select the format of the text (Plain Text or Hex).</li>
+          <li>Enter the secret key to be used during the process.</li>
+          <li>Select the output format (Plain Text or Hex).</li>
+          <li>
+            Click the "Encrypt" button if you enter the plain text or click the
+            "Decrypt" button if you enter the cipher text.
+          </li>
+          <li>
+            View the output result in the large text area on the right-hand side
+            of the screen.
+          </li>
+        </ol>
+      </section>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
