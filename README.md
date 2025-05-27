@@ -1,4 +1,4 @@
-# Block and Stream Cipher Tool
+# Simplified Block and Stream Cipher Converter Web Application
 
 [![Vercel](https://vercel.com/button)](https://crypto-bs-cipher-frontend1.vercel.app/)
 
