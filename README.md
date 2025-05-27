@@ -8,14 +8,14 @@ A web application that allows you to encrypt and decrypt text using both Block C
 
 ## Key Features
 
-* **Block Cipher Encryption:** Encrypt your plain text using a robust block cipher algorithm.
-* **Block Cipher Decryption:** Decrypt ciphertext that was encrypted using the block cipher.
-* **Stream Cipher Encryption:** Encrypt your plain text using an efficient stream cipher algorithm.
-* **Stream Cipher Decryption:** Decrypt ciphertext that was encrypted using the stream cipher.
-* **Plain Text Input/Output:** Easily type or paste your text directly.
-* **Hexadecimal Input/Output:** Option to work with data in hexadecimal format.
-* **Key Input:** Securely enter your secret key for encryption and decryption.
-* **Clear User Interface:** Intuitive and easy-to-understand design for a seamless experience.
+* **Cipher Selection:** Allows users to choose between a Block Cipher and a Stream Cipher.
+* **Operation Selection:** Enables users to select between Encryption and Decryption.
+* **Plain Text Input:** A text area for users to enter the text they want to encrypt.
+* **Key Input:** A single input field for the encryption/decryption key (as a string).
+* **Cipher Text Output:** A text area to display the resulting Cipher Text in Hexadecimal or Base64 format after encryption.
+* **Cipher Text Input Type (for Decryption): When decrypting, this area allows users to paste the Hexadecimal or Base64 encoded Cipher Text.
+* **Output Display (Plain Text):** After successful decryption, the original Plain Text is displayed.
+* **Instructions:** Basic instructions on how to use the tool.
 
 ## How to Use
 
@@ -51,15 +51,14 @@ This web application utilizes Vercel for both the frontend and the backend deplo
 
 ## Future Enhancements
 
-* Support for more cipher algorithms and modes.
-* Key generation and management tools.
-* More advanced input/output format options (e.g., Base64).
-* Improved error handling and user feedback.
+* Database for Storing User Keys (with appropriate security considerations): Implement a database to store user keys, allowing for potential future features like user accounts and key management.  This would require careful consideration of security best practices for key storage.
+* Improve User Interface: Enhance the user interface for better usability and visual appeal.
+* Implement Key Generation: Add functionality to generate cryptographic keys within the application, with clear warnings about the importance of secure key management.
 
 
 ## Team members
 
-* Nho Tomaneath
-* Noy Chalinh
-* Taing Bunsou
-* Taing Hokseng
+* **Nho Tomaneath:** Frontend 
+* **Noy Chalinh:** Backend for Stream Cipher 
+* **Taing Hokseng:** Backend for Block Cipher 
+* **Taing Bunsou:** Team Lead and DevOps 
