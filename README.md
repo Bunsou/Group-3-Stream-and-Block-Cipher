@@ -13,7 +13,7 @@ A web application that allows you to encrypt and decrypt text using both Block C
 * **Plain Text Input:** A text area for users to enter the text they want to encrypt.
 * **Key Input:** A single input field for the encryption/decryption key (as a string).
 * **Cipher Text Output:** A text area to display the resulting Cipher Text in Hexadecimal or Base64 format after encryption.
-* **Cipher Text Input Type (for Decryption): When decrypting, this area allows users to paste the Hexadecimal or Base64 encoded Cipher Text.
+* **Cipher Text Input Type (for Decryption):** When decrypting, this area allows users to paste the Hexadecimal or Base64 encoded Cipher Text.
 * **Output Display (Plain Text):** After successful decryption, the original Plain Text is displayed.
 * **Instructions:** Basic instructions on how to use the tool.
 
