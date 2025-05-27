@@ -19,13 +19,13 @@ A web application that allows you to encrypt and decrypt text using both Block C
 
 ## How to Use
 
-1.  **Select Cipher:** Choose between "Block Cipher" and "Stream Cipher" using the options at the top.
-2.  **Enter Plain Text/Ciphertext:** Type or paste the text you want to encrypt or decrypt into the left text area.
-3.  **Select Input Format:** Choose whether your input is in "Plain Text" or "Hex" format.
-4.  **Enter Key:** Provide the secret key that will be used for the encryption or decryption process.
-5.  **Select Output Type:** Choose whether you want the result to be displayed in "Plain Text" or "Hex" format.
-6.  **Encrypt/Decrypt:** Click the "Encrypt" button if you've entered plain text, or the "Decrypt" button if you've entered ciphertext.
-7.  **View Output:** The result of the operation will appear in the text area on the right.
+1. Select Cipher.
+2. Select the input type of the text (Plain Text for Encryption, Hex or Base 64 for Decryption).
+3. Enter your input text in the text area. 
+4. Enter the secret key to be used during the process.
+5. Select the output format (Plain Text for Decryption, Hex or Base 64 for Encryption).
+6. Click the "Encrypt" button if you enter the plain text or click the "Decrypt" button if you enter the cipher text.
+7. Click “Submit” to view the output result in the large text area on the right-hand side of the screen.
 
 ## Technologies Used
 
